@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cardsColor: #202020;
+  --cardsLighterColor: #252525;
+  --checkColor: rgb(32, 129, 226);
+  --floorColor: #919191;
+  --pageMainColor: rgb(43, 11, 131);
+}
+
+body {
+  position: relative;
+  perspective: 600px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-image: linear-gradient(var(--pageMainColor), #000);
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 25px 50px;
+  gap: 20px;
+}
+
+.header_content {
+  width: 13%;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+header .diff {
+  margin-left: 8px;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.main {
+  min-height: 90vh;
+}
+
+.title {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.text {
+  color: gray;
+  padding: 2rem 5rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+button a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  padding: 25px 30px;
+  background-color: #fff;
+  color: var(--pageMainColor);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--pageMainColor);
+  color: #050801;
+  box-shadow: 0 0 5px var(--pageMainColor),
+    0 0 25px var(--pageMainColor),
+    0 0 50px var(--pageMainColor),
+    0 0 200px var(--pageMainColor);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
